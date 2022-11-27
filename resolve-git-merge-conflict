@@ -1,43 +1,55 @@
-Download the project file and unzip
+Download the project file and unzip.
 **************************************************************************
 wget https://backup-edureka.s3.ap-south-1.amazonaws.com/sample-project.zip
 unzip sample-project
 mv sample-project prj1
 
 
-Create a new file and add 2 lines of text
+Create a new file and add 2 lines of text.
 **************************************************************************
 touch readme.txt
 nano readme.txt
 
 
-Initiate git and commit changes
+Initiate git and commit changes.
 **************************************************************************
 git init                      = to initiate git tracking in the project working directory.
 git add .                     = to add the changes to the staging directory.
-git commit -m "message"       = to commit the changes to local repo master branch.
+git commit -m "message"       = to commit the changes to local repo Master branch.
 
 
-Create two new branches from the master
+Create two new branches from the master.
 **************************************************************************
-git branch feature-branch-1   = to create a feature-branch-1.
-git branch feature-branch-2   = to create a feature-branch-2.
+git branch Branch-1   = to create a Branch-1.
+git branch Branch-2   = to create a Branch-2.
 
 
-Swap to branch1 and modify the file readme.txt on line number 2 and commit
+Swap to Branch-1 and modify the file readme.txt on line number 2 and commit.
 **************************************************************************
-git checkout feature-branch-1 = to swap to feature-branch-1.
+git checkout Branch-1         = to swap to feature-branch-1.
 nano readme.txt               = to open and modify the file on line number 2.
 git add .                     = to add the changes to the staging directory.
-git commit -m "message"       = to commit the changes to local repo master branch.
+git commit -m "message"       = to commit the changes to local repo Branch-1.
 
 
-Swap to branch2 and modify the file readme.txt on line number 2 and commit
+Swap to Branch2 and modify the file readme.txt on line number 2 and commit.
 **************************************************************************
 git checkout feature-branch-2 = to swap to feature-branch-2.
 nano readme.txt               = to open and modify the file on line number 2.
 git add .                     = to add the changes to the staging directory.
 git commit -m "message"       = to commit the changes to local repo master branch.
+
+
+Swap to Master branch and merge Branch1 and Branch2 into master branch. 
+**************************************************************************
+git checkout master          = to swap to master branch.
+git merge feature-branch-1   = to merge branch1 into master branch.
+git merge feature-branch-2   = to merge branch2 into master branch.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+At this point merge conflict must arise.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 
 
 
