@@ -21,7 +21,7 @@ git config --global user.name "Devops Cluster" = to add user name.
 git config --global merge.tool vimdiff = to add git mergetool.
 git status                            = to check changes in the working directory.
 git add .                             = to add the changes to the staging directory.
-git commit -m "master branch commit"  = to commit the changes to local repo Master branch.
+git commit -m "master branch commit"  = to commit the changes to local repo master branch.
 
 
 Create two new branches from the master branch.
@@ -36,22 +36,22 @@ git checkout branch1            = to swap to branch1.
 nano readme.txt                 = to open and modify the file on line number 1.
 git status                      = to check changes in the branch1 working directory.
 git add .                       = to add the changes to the branch1 staging directory.
-git commit -m "branch1 commit"  = to commit the changes to branch1 local repo Branch-1.
+git commit -m "branch1 commit"  = to commit the changes to branch1 local repo branch.
 
 
 Swap to branch2 and modify the file readme.txt on line number 2 and commit.
 **************************************************************************
 git checkout branch2         = to swap to branch2.
 nano readme.txt               = to open and modify the file on line number 1.
-git add .                     = to add the changes to the staging directory.
-git commit -m "message"       = to commit the changes to local repo Branch-2.
+git add .                     = to add the changes to the branch2 staging directory.
+git commit -m "message"       = to commit the changes to branch2 local repo branch.
 
 
-Swap to master branch and merge branch1 and branch2 into Master branch.
+Swap to master branch and merge branch1 and branch2 into master branch.
 **************************************************************************
 git checkout master          = to swap to master branch.
-git merge branch-1           = to merge branch1 into master branch.
-git merge branch-2           = to merge branch2 into master branch.
+git merge branch1            = to merge branch1 into master branch.
+git merge branch2            = to merge branch2 into master branch.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ************** At this point merge conflict must arise *******************
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -61,8 +61,8 @@ git merge abort             = to abort the merge process.
 To reslove merge conflict
 **************************************************************************
 git mergetool                               = to review and resolve the conflict.
-git add .                                   = to add the changes to the staging directory.
-git commit -m "merge conflict resloved"     = to commit the changes to local repo Branch-2.
+git add .                                   = to add the accepted changes to the staging directory.
+git commit -m "merge conflict resloved"     = to commit the changes to local repo master branch.
 git branch --meregd                         = to check the list of merged branches.
 
 
