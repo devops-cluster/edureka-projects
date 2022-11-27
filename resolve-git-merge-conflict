@@ -1,3 +1,5 @@
+***** START *****
+
 Download the project file and unzip.touch
 **************************************************************************
 wget https://backup-edureka.s3.ap-south-1.amazonaws.com/sample-project.zip
@@ -53,10 +55,20 @@ git merge branch-2           = to merge branch2 into master branch.
 ************** At this point merge conflict must arise *******************
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-git merge abort             = to abort the merge process
+git merge abort             = to abort the merge process.
 
-To reslove conflict
+To reslove merge conflict
 **************************************************************************
+git mergetool                               = to review and resolve the conflict.
+git add .                                   = to add the changes to the staging directory.
+git commit -m "merge conflict resloved"     = to commit the changes to local repo Branch-2.
+git branch --meregd                         = to check the list of merged branches.
+
+
+***** END *****
+
+
+
 
 
 
